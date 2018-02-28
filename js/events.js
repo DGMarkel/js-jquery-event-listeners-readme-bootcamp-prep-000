@@ -6,8 +6,18 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', function() {
-    $('img').addClass(tasty);
+    $('img').addClass('tasty');
   });
+}
+
+function pressIt() {
+  $('#typing').on('keydown', function () {
+    if (key.which === 103) {
+      alert('You pressed it!');
+      return;
+      alert('Press another key!');
+    }
+  })
 }
 
 $(document).ready(function(){
