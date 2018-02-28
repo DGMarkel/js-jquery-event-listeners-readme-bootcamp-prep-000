@@ -11,7 +11,7 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('ul input#typing').on('keydown', function (key) {
+  $('form input:first-child').on('keydown', function (key) {
     if (key.which == 103) {
       alert('You pressed it!');
       return;
