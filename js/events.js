@@ -15,7 +15,6 @@ function pressIt() {
     if (key.which == 103) {
       alert('You pressed it!');
       return;
-      alert('Press another key!');
     }
   })
 }
